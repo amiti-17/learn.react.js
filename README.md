@@ -1,2 +1,3 @@
-# JS-learn-template
-Was created for making other project.
+# leatn.react.js
+
+this repository for personal testing some features react.js
