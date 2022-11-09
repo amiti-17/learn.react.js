@@ -1,11 +1,12 @@
 {
-  "name": "js-lern",
+  "name": "learn.react",
   "version": "1.0.0",
-  "description": "",
+  "description": "this repository for personal testing some features react.js",
   "main": "index.js",
   "scripts": {
-    "start": "parcel ./index.html --open",
-    "build": "rm -rf dist && parcel build ./src/index.html --public-url ./",
+    "start": "parcel ./dist/index.html --open",
+    "srt": "webpack",
+    "build": "rm -rf dist && parcel build ./dist/index.html --public-url ./",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "lint:html": "linthtml *.html",
@@ -18,22 +19,36 @@
     "url": "git+https://github.com/amiti-17/JS-learn.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Tim",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/amiti-17/JS-learn/issues"
   },
   "homepage": "https://github.com/amiti-17/JS-learn#readme",
   "devDependencies": {
+    "@babel/cli": "7.17.0",
+    "@babel/core": "7.17.0",
+    "@babel/preset-react": "7.16.0",
     "@linthtml/linthtml": "^0.8.6",
     "@mate-academy/linthtml-config": "^0.0.2",
+    "babel-loader": "^9.1.0",
     "concurrently": "^7.3.0",
+    "css-loader": "^6.7.1",
     "eslint": "^8.21.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
     "gh-pages": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
     "parcel": "^1.12.3",
+    "style-loader": "^3.3.1",
     "stylelint": "^14.10.0",
-    "stylelint-config-standard-scss": "^5.0.0"
+    "stylelint-config-standard-scss": "^5.0.0",
+    "svg-inline-loader": "^0.8.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "4.11.0"
+  },
+  "dependencies": {
+    "0y": "^1.0.0"
   }
 }
